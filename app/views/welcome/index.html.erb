@@ -1,3 +1,16 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
-<%= "#{@random} #{@id} #{@controller_message}"%>
+<link rel="stylesheet" href="//brick.a.ssl.fastly.net/Roboto:400"/>
+<div class="button" onclick="window.open('<%= @randomlink.url %>')">
+  <p>Take me to a useless website</p>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/TweenMax.min.js"></script>
+<script>
+var $button = document.querySelector('.button');
+$button.addEventListener('click', function() {
+  var duration = 0.3,
+      delay = 0.08;
+  TweenMax.to($button, duration, {scaleY: 1.6, ease: Expo.easeOut});
+  TweenMax.to($button, duration, {scaleX: 1.2, scaleY: 1, ease: Back.easeOut, easeParams: [3], delay: delay});
+  TweenMax.to($button, duration * 1.25, {scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
+});
+</script>
