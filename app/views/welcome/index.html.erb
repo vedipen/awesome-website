@@ -9,7 +9,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/TweenMax.min.js"></script>
 <script>
 var $button = document.querySelector('.button');
-$button.addEventListener('click', function() {
+$button.addEventListener("mouseover", function() {
   var duration = 0.3,
       delay = 0.08;
   TweenMax.to($button, duration, {scaleY: 1.6, ease: Expo.easeOut});
