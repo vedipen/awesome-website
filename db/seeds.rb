@@ -136,4 +136,4 @@ Link.create(url:'http://iloveyoulikeafatladylovesapples.com/', description:'Not 
 Link.create(url:'http://chickenonaraft.com/', description:'Not Known')
 Link.create(url:'http://www.sadforjapan.com/', description:'Not Known')
 Link.create(url:'http://salmonofcapistrano.com/', description:'Not Known')
-Link.create(url:'http://iamawesome.com/', description:'Not Known'
+Link.create(url:'http://iamawesome.com/', description:'Not Known')

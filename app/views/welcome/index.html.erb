@@ -1,6 +1,9 @@
+</head>
+<body>
 <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Roboto:400"/>
-<div class="button" onclick="window.open('<%= @randomlink.url %>')">
-  <p>Take me to a ranodom awesome website</p>
+<%= link_to welcome_awesome_path , { :class=>"button", :target=>"_blank" } do %>
+    <p>Take me to an Awesome Website!</p>
+  <% end %>
 </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/TweenMax.min.js"></script>
