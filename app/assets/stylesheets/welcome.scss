@@ -5,6 +5,96 @@ body {
   background: #f1c40f;
 }
 
+.i {
+  bottom: 20px;
+  left: 20px;
+  color: #3498db;
+  position:fixed;
+  transition: 0.5s;
+}
+
+.info {
+  font-family: 'Roboto';
+  text-align: center;
+  color: #FFF;
+  user-select: none;
+}
+
+.info a {
+  font-family: 'Roboto';
+  text-align: center;
+  color: #FFF;
+  user-select: none;
+}
+
+.popup{
+  display: none;
+  width: 225px;
+  height: 100px;
+  background: #3498db;
+  opacity: 0.9;
+  bottom: 20px;
+  left: -5px;
+  position: fixed;
+  border-radius: 5px;
+  box-shadow: 0px 25px 10px -15px rgba(0, 0, 0, 0.05);
+  transition: 0.5s;
+}
+
+.close{
+  position:absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  cursor:pointer;
+  z-index:500;
+}
+
+.ns-close {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	overflow: hidden;
+	text-indent: 100%;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.ns-close:hover,
+.ns-close:focus {
+	outline: none;
+}
+
+.ns-close::before,
+.ns-close::after {
+	content: '';
+	position: absolute;
+	width: 3px;
+	height: 60%;
+	top: 50%;
+	left: 50%;
+	background: #1f8b4d;
+}
+
+.ns-close:hover::before,
+.ns-close:hover::after {
+	background: #fff;
+}
+
+.ns-close::before {
+	-webkit-transform: translate(-50%,-50%) rotate(45deg);
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.ns-close::after {
+	-webkit-transform: translate(-50%,-50%) rotate(-45deg);
+	transform: translate(-50%,-50%) rotate(-45deg);
+}
+
 .button {
   background: #3498db;
   width: 180px;

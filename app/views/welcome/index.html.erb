@@ -1,3 +1,4 @@
+<link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
 </head>
 <body>
 <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Roboto:400"/>
@@ -5,8 +6,19 @@
     <p>Take me to an Awesome Website!</p>
   <% end %>
 </div>
+<div class="popup">
+    <div class="close ns-close"></div>
+    <p class="info">Created by: <a href="http://vedipen.com/" target="_blank">vedipen</a></p>
+    <p class="info">Contact: <a href="mailto:contact@awesomeweb.site?Subject=Hello%20Dipen" target="_blank">contact@awesomeweb.site</a></p>
+ </div>
+<div class="i">
+  <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
+</div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/TweenMax.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src="https://use.fontawesome.com/76393fa922.js"></script>
 <script>
 var $button = document.querySelector('.button');
 $button.addEventListener("mouseover", function() {
@@ -16,4 +28,20 @@ $button.addEventListener("mouseover", function() {
   TweenMax.to($button, duration, {scaleX: 1.2, scaleY: 1, ease: Back.easeOut, easeParams: [3], delay: delay});
   TweenMax.to($button, duration * 1.25, {scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
 });
+
+$(document).ready(function() {
+  $('.i').click(function(){
+    $('.popup').show();
+    $('.i').hide();
+  });
+  $('.close').click(function(){
+    $('.popup').hide();
+    $('.i').show();
+  });
+});
+
+
+
+
+
 </script>
