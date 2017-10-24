@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="refresh" content="1; url=<%= @randomlink.url %>">
 <script type="text/javascript">
-    window.location.href = "<%= @randomlink.url %>"
+  setTimeout(function() { window.location.href = "<%= @randomlink.url %>" }, 5000);
 </script>
 <title>AwesomeWeb</title>
 </head>
