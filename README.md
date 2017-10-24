@@ -1,24 +1,8 @@
-# README
+# AWESOME WEBSITE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An [awesomeweb.site](http://awesomeweb.site) for awesome people with an awesome portal to awesome websites from not-so-awesome world of the internet created on an awesome weekend. :p 
 
-Things you may want to cover:
+It provides user with different awesome websites at every click to release boredom.  
+More awesome website links appreciated.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![AwesomeWeb](https://media.giphy.com/media/d2Z9QYzA2aidiWn6/giphy.gif)
